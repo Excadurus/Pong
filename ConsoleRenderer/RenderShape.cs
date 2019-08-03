@@ -23,7 +23,8 @@ namespace ConsoleRenderer
 			{
 				for(int j = 0; j < transformables[index].Shape.GetLength(1); j++)
 				{
-					Console.SetCursorPosition(i + transformables[index].Left, j + transformables[index].Top);
+					
+					Console.SetCursorPosition((j + transformables[index].Left)%Console.BufferWidth, (i + transformables[index].Top) % Console.BufferHeight);
 					Console.Write(transformables[index].Shape[i,j]);
 				}
 			}

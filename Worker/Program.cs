@@ -8,6 +8,7 @@ namespace Worker
 	{
 		static void Main(string[] args)
 		{
+			//testing
 			//Physcis engine should save last time it was called and the time it's called right now
 			Pong pong = new Pong(20, 20);
 			RenderShape renderer = new RenderShape();

@@ -24,7 +24,7 @@ namespace ConsoleRenderer
 				for(int j = 0; j < transformables[index].Shape.GetLength(1); j++)
 				{
 					
-					Console.SetCursorPosition((j + transformables[index].Left)%Console.BufferWidth, (i + transformables[index].Top) % Console.BufferHeight);
+					Console.SetCursorPosition((j + (int)transformables[index].Position.X)%Console.BufferWidth, (i + (int)transformables[index].Position.Y) % Console.BufferHeight);
 					Console.Write(transformables[index].Shape[i,j]);
 				}
 			}

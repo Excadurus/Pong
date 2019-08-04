@@ -1,30 +1,23 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using _2DVector;
+
 
 namespace TransformEngine
 {
 	class WallLeft : ITransformable
 	{
-		public int Left { get; set; }
-		public int Top { get; set; }
+		public Vector Position { get; set; }
 		public char[,] Shape { get; set; }
 
-		public WallLeft(int left, int top)
+		public WallLeft(double x, double y)
 		{
-			this.Left = left;
-			this.Top = top;
+			Position = new Vector(x, y);
 			this.Shape = new char[4, 2]{
 				{'█','█'},
 				{'█','█'},
 				{'█','█'},
 				{'█','█'},
 			};
-		}
-
-		public void Call()
-		{
-			throw new NotImplementedException();
 		}
 	}
 }

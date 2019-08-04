@@ -6,8 +6,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\2DVector\2DVector.csproj" />
     <ProjectReference Include="..\ConsoleApp1\TransformEngine.csproj" />
     <ProjectReference Include="..\ConsoleRenderer\ConsoleRenderer.csproj" />
+    <ProjectReference Include="..\PhysicsEngine\PhysicsEngine.csproj" />
   </ItemGroup>
 
 </Project>

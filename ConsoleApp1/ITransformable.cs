@@ -1,11 +1,9 @@
-﻿
+﻿using _2DVector;
 namespace TransformEngine
 {
 	public interface ITransformable
 	{
-		int Left { get; set; }
-		int Top { get; set; }
+		Vector Position { get; set; }
 		char[,] Shape { get; set;}
-		void Call();
 	}
 }

@@ -2,6 +2,8 @@
 using TransformEngine;
 using ConsoleRenderer;
 using System.Threading;
+using _2DVector;
+using PhysicsEngine;
 
 namespace Worker
 {
@@ -27,9 +29,12 @@ namespace Worker
 			for(int i =0; i<=50000; i++)
 			{
 				renderer.Render();
-				pong.Left = pong.Left + 2;
-				Thread.Sleep(50);
-				Console.Clear();
+				Thread.Sleep(100);
+				Console.SetCursorPosition((int)pong.Position.X % Console.BufferWidth, (int)pong.Position.Y % Console.BufferHeight);
+				Console.Write(" ");
+				pong.Position = GeneralPhysics.CalculatePosition(pong,pong.Position.X, pong.Position.Y);
+				//Console.Clear();
+				
 			}
 			Console.ReadKey();
 		}

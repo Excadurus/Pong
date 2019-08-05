@@ -25,6 +25,7 @@ namespace ConsoleRenderer
 				{
 					
 					Console.SetCursorPosition((j + (int)transformables[index].Position.X)%Console.BufferWidth, (i + (int)transformables[index].Position.Y) % Console.BufferHeight);
+					//handle negative numbers;
 					Console.Write(transformables[index].Shape[i,j]);
 				}
 			}

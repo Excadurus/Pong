@@ -17,5 +17,10 @@
 			this.Y = vector.Y;
 		}
 
+		public static Vector VectorAddition(Vector first,Vector second)
+		{
+			return new Vector(first.X + second.X, first.Y + second.Y);
+		}
+
 	}
 }

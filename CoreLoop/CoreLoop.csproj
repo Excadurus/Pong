@@ -1,17 +1,13 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\2DVector\2DVector.csproj" />
     <ProjectReference Include="..\ConsoleApp1\TransformEngine.csproj" />
     <ProjectReference Include="..\ConsoleRenderer\ConsoleRenderer.csproj" />
-    <ProjectReference Include="..\CoreLoop\CoreLoop.csproj" />
     <ProjectReference Include="..\PhysicsEngine\PhysicsEngine.csproj" />
-    <ProjectReference Include="..\Pong\Pong.csproj" />
   </ItemGroup>
 
 </Project>

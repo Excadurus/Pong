@@ -1,4 +1,5 @@
-﻿namespace _2DVector
+﻿namespace _2DVector //Projects like this should contatin general classes like, 2dvector- 3dvector- or sth else, and also use a 
+	//common name showing this kind of meaning.
 {
 	public struct Vector
 	{
@@ -17,10 +18,9 @@
 			this.Y = vector.Y;
 		}
 
-		public static Vector VectorAddition(Vector first,Vector second)
+		public static Vector Add(Vector first,Vector second)
 		{
 			return new Vector(first.X + second.X, first.Y + second.Y);
 		}
-
 	}
 }

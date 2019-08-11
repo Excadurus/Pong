@@ -9,9 +9,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Worker", "Worker\Worker.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleRenderer", "ConsoleRenderer\ConsoleRenderer.csproj", "{77D942F0-7A2E-4139-B588-FBD1F25384DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhysicsEngine", "PhysicsEngine\PhysicsEngine.csproj", "{8495297A-8F49-494E-80A9-CE81A6BD1072}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhysicsEngine", "PhysicsEngine\PhysicsEngine.csproj", "{8495297A-8F49-494E-80A9-CE81A6BD1072}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2DVector", "2DVector\2DVector.csproj", "{FA6214EF-EA29-4D41-8484-07D8C0105037}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2DVector", "2DVector\2DVector.csproj", "{FA6214EF-EA29-4D41-8484-07D8C0105037}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreLoop", "CoreLoop\CoreLoop.csproj", "{E88615DA-3CFD-4E31-A8FB-0586EAAA6CEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pong", "Pong\Pong.csproj", "{74AEA66C-FEF1-4EE3-8B63-C5BB823DBF7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Input", "Input\Input.csproj", "{3DB660A9-B4F6-4CC4-9874-36C0036F65A0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +45,18 @@ Global
 		{FA6214EF-EA29-4D41-8484-07D8C0105037}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA6214EF-EA29-4D41-8484-07D8C0105037}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA6214EF-EA29-4D41-8484-07D8C0105037}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E88615DA-3CFD-4E31-A8FB-0586EAAA6CEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E88615DA-3CFD-4E31-A8FB-0586EAAA6CEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E88615DA-3CFD-4E31-A8FB-0586EAAA6CEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E88615DA-3CFD-4E31-A8FB-0586EAAA6CEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74AEA66C-FEF1-4EE3-8B63-C5BB823DBF7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74AEA66C-FEF1-4EE3-8B63-C5BB823DBF7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74AEA66C-FEF1-4EE3-8B63-C5BB823DBF7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74AEA66C-FEF1-4EE3-8B63-C5BB823DBF7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DB660A9-B4F6-4CC4-9874-36C0036F65A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DB660A9-B4F6-4CC4-9874-36C0036F65A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DB660A9-B4F6-4CC4-9874-36C0036F65A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DB660A9-B4F6-4CC4-9874-36C0036F65A0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

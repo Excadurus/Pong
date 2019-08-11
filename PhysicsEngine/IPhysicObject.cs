@@ -1,5 +1,5 @@
-﻿using System;
-using _2DVector;
+﻿using _2DVector;
+
 namespace PhysicsEngine
 {
 	public interface IPhysicObject

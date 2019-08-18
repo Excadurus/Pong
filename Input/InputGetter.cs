@@ -2,13 +2,11 @@
 
 namespace Input
 {
-	class InputGetter
+	public interface IInputGetter
 	{
-		public InputGetter(IInputTask task)
-		{
-			Thread th = new Thread(task.act);
-		}
+		IInputTask UpAction { get; set; }
+		IInputTask DownAction { get; set; }
 
-		public
+		void Act();
 	}
 }

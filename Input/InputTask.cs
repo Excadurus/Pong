@@ -4,8 +4,8 @@ using System.Text;
 
 namespace Input
 {
-	interface IInputTask
+	public interface IInputTask
 	{
-		void act();
+		void Act();
 	}
 }

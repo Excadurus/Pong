@@ -5,6 +5,7 @@ using System.Threading;
 using _2DVector;
 using PhysicsEngine;
 using Logic;
+using Input;
 
 namespace Worker
 {
@@ -18,6 +19,10 @@ namespace Worker
 		//Playground stuff, make this a separate class later? 
 		double playgroundWidth;
 		double playgroundHeight;
+
+		//Input Threads
+		Thread leftPlayer;
+		Thread rightPlayer;
 
 		//Objects needing Initializing
 		Pong pong;
@@ -54,6 +59,17 @@ namespace Worker
 			physicsEngine.Add(rightWall);
 			physicsEngine.Add(topBorder);
 			physicsEngine.Add(bottomBorder);
+
+			//Add New Threads here :)
+			IInputGetter leftInputGetter = new LeftPlayerConsoleInputGetter(new WallMoverUp(leftWall), new WallMoverDown(leftWall));
+			leftPlayer = new Thread(leftInputGetter.Act);
+			leftPlayer.IsBackground = true;
+			leftPlayer.Start();
+			//Put All inputs in One place, don't separate them;
+			IInputGetter rightInputGetter = new RightPlayerConsoleInputGetter(new WallMoverUp(rightWall), new WallMoverDown(rightWall));
+			rightPlayer = new Thread(rightInputGetter.Act);
+			rightPlayer.IsBackground = true;
+			rightPlayer.Start();
 		}
 
 		protected override void OnBeforePhysic()
@@ -109,5 +125,29 @@ namespace Worker
 			}
 		}
 
+		private class WallMoverUp : IInputTask
+		{
+			Wall wall;
+			public WallMoverUp(Wall wall)
+			{
+				this.wall = wall;
+			}
+			public void Act()
+			{
+				wall.Velocity = new Vector(0, -10);
+			}
+		}
+		private class WallMoverDown : IInputTask
+		{
+			Wall wall;
+			public WallMoverDown(Wall wall)
+			{
+				this.wall = wall;
+			}
+			public void Act()
+			{
+				wall.Velocity = new Vector(0, 10);
+			}
+		}
 	}
 }

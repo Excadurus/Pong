@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CoreLoop\CoreLoop.csproj" />
+    <ProjectReference Include="..\Input\Input.csproj" />
     <ProjectReference Include="..\PhysicsEngine\PhysicsEngine.csproj" />
   </ItemGroup>
 

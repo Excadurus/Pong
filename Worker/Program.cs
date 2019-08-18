@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 
 namespace Worker
 {
@@ -27,8 +28,10 @@ namespace Worker
 			Console.SetWindowPosition(0, 0);
 			//Console.WriteLine(Console.WindowLeft);//0
 			//Console.WriteLine(Console.WindowTop);//0
-			PongCoreLoop coreLoop = new PongCoreLoop(90,30,10.0);
+			PongCoreLoop coreLoop = new PongCoreLoop(90,30,40);
 			coreLoop.RunCoreLoop();
 		}
+
+		
 	}
 }
